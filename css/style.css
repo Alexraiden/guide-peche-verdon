@@ -206,11 +206,15 @@ img {
   background-color: transparent;
   transition: all var(--transition-base);
   padding: var(--spacing-md) 0;
+  /* Fix iOS click issues */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .header.scrolled {
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: var(--shadow-md);
 }
 
@@ -259,6 +263,12 @@ img {
   gap: 4px;
   cursor: pointer;
   z-index: 1001;
+  /* Increase hit area for mobile */
+  padding: 10px;
+  margin-right: -10px;
+  background-color: transparent;
+  /* Ensure it captures events */
+  pointer-events: auto;
 }
 
 .burger-menu span {
