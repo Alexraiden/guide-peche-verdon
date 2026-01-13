@@ -548,7 +548,7 @@ img {
   margin-bottom: var(--spacing-xs);
 }
 
-.footer-copyright {
+p.copyright-text {
   grid-column: 1 / -1;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: var(--spacing-md);
