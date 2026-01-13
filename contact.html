@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contactez Lucas pour réserver votre sortie de pêche en lac. Guide diplômé dans les Alpes du Sud. Devis et infos.">
+    <title>Contact & Réservation | Lucas Guide de Pêche</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="header" style="background-color: white; box-shadow: var(--shadow-sm);">
+        <div class="container">
+            <a href="index.html" class="logo" style="color: var(--color-blue-lake);">Lucas Guide de Pêche</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" style="color: var(--color-text-primary);">Accueil</a></li>
+                    <li><a href="prestations.html" style="color: var(--color-text-primary);">Prestations</a></li>
+                    <li><a href="tarifs.html" style="color: var(--color-text-primary);">Tarifs</a></li>
+                    <li><a href="poissons.html" style="color: var(--color-text-primary);">Nos Poissons</a></li>
+                    <li><a href="zones-peche.html" style="color: var(--color-text-primary);">Zones de Pêche</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Réserver</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu Burger Color Override for white header -->
+            <style>
+                @media(max-width: 991px) {
+                    .burger-menu span {
+                        background-color: var(--color-text-primary);
+                    }
+                }
+            </style>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div style="height: 100px;"></div> <!-- Spacer for fixed header -->
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <h1>Réserver une sortie</h1>
+                <p>Envoyez-moi un message pour planifier votre prochaine aventure.</p>
+            </div>
+
+            <div class="grid grid-2 contact-layout" style="gap: 4rem;">
+
+                <!-- CONTACT INFO -->
+                <div class="order-2-mobile">
+                    <div class="card" style="padding: 2rem; background-color: var(--color-blue-lake); color: white;">
+                        <h2 style="color: white; font-size: 1.5rem; margin-bottom: 2rem;">Mes coordonées</h2>
+
+                        <div style="margin-bottom: 2rem;">
+                            <p style="margin-bottom: 0.5rem; opacity: 0.8;">Téléphone</p>
+                            <a href="tel:0695058682"
+                                style="color: white; font-size: 1.5rem; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                                <i class="ph ph-phone"></i> 06 95 05 86 82
+                            </a>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <p style="margin-bottom: 0.5rem; opacity: 0.8;">Email</p>
+                            <a href="mailto:Lucas.garcin14@gmail.com"
+                                style="color: white; font-size: 1.2rem; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                                <i class="ph ph-envelope"></i> Lucas.garcin14@gmail.com
+                            </a>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <p style="margin-bottom: 0.5rem; opacity: 0.8;">Réseaux Sociaux</p>
+                            <div class="social-links" style="justify-content: flex-start;">
+                                <a href="https://instagram.com/lucaas_grcn" target="_blank" style="color: white;"><i
+                                        class="ph ph-instagram-logo"></i></a>
+                                <a href="https://facebook.com/LucasGrc" target="_blank" style="color: white;"><i
+                                        class="ph ph-facebook-logo"></i></a>
+                            </div>
+                        </div>
+
+                        <div
+                            style="background-color: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin-top: 3rem;">
+                            <i class="ph ph-info" style="font-size: 1.5rem; margin-bottom: 10px; display: block;"></i>
+                            <p style="font-size: 0.9rem; line-height: 1.6;">Je suis souvent sur l'eau en journée. Si je
+                                ne réponds pas, laissez-moi un message ou envoyez un SMS/Email. Je vous recontacte sous
+                                24h à 48h maximum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORMULAIRE -->
+                <div class="order-1-mobile">
+                    <form action="https://formsubmit.co/Lucas.garcin14@gmail.com" method="POST"
+                        style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-lg);">
+
+                        <!-- Honeypot -->
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- Disable Captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- Success Page -->
+                        <!-- Success Page (Commented out for development/testing - uncomment when site is live) -->
+                        <!-- <input type="hidden" name="_next" value="https://lucas-guide-peche.fr/merci.html"> -->
+
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+
+                        <div class="grid grid-2" style="gap: 1rem;">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="06..." required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lake">Lac souhaité</label>
+                            <select id="lake" name="lake">
+                                <option value="Indifférent">Je ne sais pas encore</option>
+                                <option value="Sainte-Croix">Lac de Sainte-Croix</option>
+                                <option value="Esparron">Lac d'Esparron</option>
+                                <option value="Castillon">Lac de Castillon</option>
+                                <option value="Serre-Ponçon">Serre-Ponçon</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre message *</label>
+                            <textarea id="message" name="message"
+                                placeholder="Dites-moi en plus sur votre projet (date souhaitée, nombre de personnes, niveau de pêche...)"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer ma demande</button>
+                    </form>
+                </div>
+            </div>
+
+            <style>
+                @media(max-width: 768px) {
+                    .order-1-mobile {
+                        order: 1;
+                    }
+
+                    .order-2-mobile {
+                        order: 2;
+                    }
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Lucas Guide de Pêche</h3>
+                    <p style="opacity: 0.8; margin-bottom: 1rem;">Votre guide de pêche professionnel dans les Alpes du
+                        Sud.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/lucaas_grcn" target="_blank" aria-label="Instagram"><i
+                                class="ph ph-instagram-logo"></i></a>
+                        <a href="https://facebook.com/LucasGrc" target="_blank" aria-label="Facebook"><i
+                                class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="prestations.html">Prestations</a></li>
+                        <li><a href="tarifs.html">Tarifs</a></li>
+                        <li><a href="poissons.html">Nos Poissons</a></li>
+                        <li><a href="zones-peche.html">Zones de Pêche</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="ph ph-phone"></i> <a
+                                href="tel:0695058682">06 95 05 86 82</a></li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="ph ph-envelope"></i> <a
+                                href="mailto:Lucas.garcin14@gmail.com">Lucas.garcin14@gmail.com</a></li>
+                    </ul>
+                    <p class="mt-md" style="font-size: 0.9em; opacity: 0.8;">Réponse sous 24-48h</p>
+                </div>
+                <div>
+                    <h3>Zone d'activité</h3>
+                    <p style="opacity: 0.8;">Région PACA :<br>Verdon, Serre-Ponçon, Alpes de Haute Provence.</p>
+                    <div
+                        style="margin-top: 1rem; border: 1px solid rgba(255,255,255,0.3); padding: 5px; border-radius: 4px; display: inline-block;">
+                        <span style="font-size: 0.8rem;">🇫🇷 Guide Diplômé d'État</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lucas Guide de Pêche. Tous droits réservés. | <a href="mentions-legales.html">Mentions
+                        Légales</a> | <a href="cgv.html">CGV</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

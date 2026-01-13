@@ -1,0 +1,117 @@
+/* ====================================
+   LUCAS GUIDE DE PÊCHE - RESPONSIVE STYLES
+   ==================================== */
+
+@media (max-width: 991px) {
+
+    /* === HEADER & NAVIGATION === */
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease;
+        box-shadow: var(--shadow-xl);
+        padding: var(--spacing-xl);
+        gap: var(--spacing-xl);
+        z-index: 998;
+        /* Just below burger (1001) but high enough */
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu a:not(.btn) {
+        color: var(--color-text-primary);
+        font-size: 1.2rem;
+    }
+
+    /* === BURGER ANIMATION === */
+    .burger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background-color: var(--color-blue-lake);
+    }
+
+    .burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        background-color: var(--color-blue-lake);
+    }
+
+    /* === HERO SECTION === */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-secondary {
+        height: 40vh;
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* === GENERAL === */
+    .section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* === HERO === */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    /* === FOOTER === */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-lg);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    /* === UTILS === */
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-layout {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        width: 100%;
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+    }
+}

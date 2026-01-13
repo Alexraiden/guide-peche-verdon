@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pêche en lac dans le Verdon et les Alpes du Sud. Découvrez Sainte-Croix, Esparron, Castillon et Serre-Ponçon avec un guide expert.">
+    <title>Zones de Pêche PACA | Lucas Guide de Pêche</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Lucas Guide de Pêche</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="prestations.html">Prestations</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="poissons.html">Nos Poissons</a></li>
+                    <li><a href="zones-peche.html" style="color: var(--color-red-brick);">Zones de Pêche</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Réserver</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero hero-secondary">
+        <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000" alt="Lac alpin vue large"
+            class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1>Nos Zones de Pêche</h1>
+            <p class="hero-subtitle">Les plus beaux lacs de la région PACA</p>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section">
+        <div class="container text-center container-narrow mb-xl">
+            <h2>Un terrain de jeu exceptionnel</h2>
+            <p>Le Sud de la France offre une diversité de lacs impressionnante. Des eaux turquoises du Verdon aux grands
+                espaces alpins de Serre-Ponçon, chaque lac a son caractère et ses secrets.</p>
+        </div>
+
+        <!-- LAC SAINTE CROIX -->
+        <div class="container mb-xl scroll-reveal">
+            <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Lac de Sainte-Croix"
+                        style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+                <div>
+                    <h2 style="color: var(--color-blue-lake);">Lac de Sainte-Croix</h2>
+                    <span
+                        style="display:inline-block; margin-bottom: 1rem; color: var(--color-gray-stone); font-size: 0.9em;"><i
+                            class="ph ph-map-pin"></i> Alpes-de-Haute-Provence / Var</span>
+                    <p>Véritable joyau du Verdon avec ses eaux turquoises, le lac de Sainte-Croix s'étend sur plus de
+                        2200 hectares. C'est un lac magnifique qui offre un cadre de pêche idyllique.</p>
+                    <p>On y recherche principalement le <strong>gros brochet</strong> dans les herbiers et les cassures,
+                        mais aussi la perche qui y est très active. Le cadre majestueux, au pied des gorges du Verdon,
+                        rend chaque sortie inoubliable.</p>
+                    <div class="mt-md">
+                        <a href="contact.html" class="btn btn-secondary-dark">Réserver à Sainte-Croix</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LAC ESPARRON -->
+        <div class="container mb-xl scroll-reveal">
+            <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+                <div style="order: 2;">
+                    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000" alt="Lac d'Esparron"
+                        style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+                <div style="order: 1;">
+                    <h2 style="color: var(--color-blue-lake);">Lac d'Esparron</h2>
+                    <span
+                        style="display:inline-block; margin-bottom: 1rem; color: var(--color-gray-stone); font-size: 0.9em;"><i
+                            class="ph ph-map-pin"></i> Alpes-de-Haute-Provence</span>
+                    <p>Plus sauvage et intime que son grand frère, le lac d'Esparron est un petit paradis aux eaux
+                        émeraudes. Ses falaises calcaires abritent de nombreux carnassiers.</p>
+                    <p>C'est un lac très technique où la discrétion est de mise. Les <strong>perches</strong> et les
+                        <strong>brochets</strong> y trouvent de nombreuses cachettes. Idéal pour ceux qui cherchent le
+                        calme et la nature préservée.
+                    </p>
+                    <div class="mt-md">
+                        <a href="contact.html" class="btn btn-secondary-dark">Réserver à Esparron</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile fix for order -->
+            <style>
+                @media(max-width: 768px) {
+                    .grid-2>div {
+                        order: 0 !important;
+                    }
+                }
+            </style>
+        </div>
+
+        <!-- LAC CASTILLON -->
+        <div class="container mb-xl scroll-reveal">
+            <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Lac de Castillon"
+                        style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+                <div>
+                    <h2 style="color: var(--color-blue-lake);">Lac de Castillon</h2>
+                    <span
+                        style="display:inline-block; margin-bottom: 1rem; color: var(--color-gray-stone); font-size: 0.9em;"><i
+                            class="ph ph-map-pin"></i> Haut Verdon</span>
+                    <p>Situé plus en altitude, Castillon offre un paysage alpin saisissant. Ses eaux sont d'un bleu
+                        profond et abritent une belle population de carnassiers.</p>
+                    <p>Ici, les <strong>sandres</strong> et les <strong>brochets</strong> sont les rois. Les variations
+                        de niveau d'eau créent des structures intéressantes à prospecter. Une destination parfaite pour
+                        les amateurs de grands espaces.</p>
+                    <div class="mt-md">
+                        <a href="contact.html" class="btn btn-secondary-dark">Réserver à Castillon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LAC SERRE PONCON -->
+        <div class="container scroll-reveal">
+            <div class="grid grid-2" style="align-items: center; gap: 3rem;">
+                <div style="order: 2;">
+                    <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000" alt="Lac de Serre-Ponçon"
+                        style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+                <div style="order: 1;">
+                    <h2 style="color: var(--color-blue-lake);">Lac de Serre-Ponçon</h2>
+                    <span
+                        style="display:inline-block; margin-bottom: 1rem; color: var(--color-gray-stone); font-size: 0.9em;"><i
+                            class="ph ph-map-pin"></i> Hautes-Alpes</span>
+                    <p>Le géant des Alpes du Sud. Une véritable mer intérieure entourée de montagnes. C'est un lac
+                        mythique pour la pêche des carnassiers.</p>
+                    <p>Connu pour ses gros <strong>brochets</strong> trophées et ses belles populations de
+                        <strong>truites lacustres</strong>. La navigation y est un plaisir en soi, et chaque touche peut
+                        être celle du poisson d'une vie.
+                    </p>
+                    <div class="mt-md">
+                        <a href="contact.html" class="btn btn-secondary-dark">Réserver à Serre-Ponçon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section mt-xl">
+        <div class="container">
+            <h2>Vous ne savez pas quel lac choisir ?</h2>
+            <p>Appelez-moi, je vous conseillerai le meilleur spot selon la saison et vos envies.</p>
+            <a href="contact.html" class="btn btn-primary">Me contacter</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Lucas Guide de Pêche</h3>
+                    <p style="opacity: 0.8; margin-bottom: 1rem;">Votre guide de pêche professionnel dans les Alpes du
+                        Sud.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/lucaas_grcn" target="_blank" aria-label="Instagram"><i
+                                class="ph ph-instagram-logo"></i></a>
+                        <a href="https://facebook.com/LucasGrc" target="_blank" aria-label="Facebook"><i
+                                class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="prestations.html">Prestations</a></li>
+                        <li><a href="tarifs.html">Tarifs</a></li>
+                        <li><a href="poissons.html">Nos Poissons</a></li>
+                        <li><a href="zones-peche.html">Zones de Pêche</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="ph ph-phone"></i> <a
+                                href="tel:0695058682">06 95 05 86 82</a></li>
+                        <li style="display: flex; gap: 10px; align-items: center;"><i class="ph ph-envelope"></i> <a
+                                href="mailto:Lucas.garcin14@gmail.com">Lucas.garcin14@gmail.com</a></li>
+                    </ul>
+                    <p class="mt-md" style="font-size: 0.9em; opacity: 0.8;">Réponse sous 24-48h</p>
+                </div>
+                <div>
+                    <h3>Zone d'activité</h3>
+                    <p style="opacity: 0.8;">Région PACA :<br>Verdon, Serre-Ponçon, Alpes de Haute Provence.</p>
+                    <div
+                        style="margin-top: 1rem; border: 1px solid rgba(255,255,255,0.3); padding: 5px; border-radius: 4px; display: inline-block;">
+                        <span style="font-size: 0.8rem;">🇫🇷 Guide Diplômé d'État</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lucas Guide de Pêche. Tous droits réservés. | <a href="mentions-legales.html">Mentions
+                        Légales</a> | <a href="cgv.html">CGV</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
