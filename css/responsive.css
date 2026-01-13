@@ -102,6 +102,33 @@
     .contact-layout {
         flex-direction: column;
     }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    /* === ICON CARDS === */
+    .icon-card {
+        padding: 0.5rem;
+    }
+
+    .icon-card-icon {
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .icon-card h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0.1rem;
+        line-height: 1;
+    }
+
+    .icon-card p {
+        font-size: 0.7rem;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 480px) {
