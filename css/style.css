@@ -523,7 +523,8 @@ img {
 .footer-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--spacing-xl);
+  column-gap: var(--spacing-xl);
+  row-gap: var(--spacing-md);
 }
 
 .footer h3 {

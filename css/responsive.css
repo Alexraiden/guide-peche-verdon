@@ -87,7 +87,7 @@
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-sm);
     }
 
     .social-links {
