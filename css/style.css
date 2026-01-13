@@ -550,9 +550,6 @@ img {
 
 p.copyright-text {
   grid-column: 1 / -1;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: var(--spacing-md);
-  margin-top: var(--spacing-md);
   text-align: center;
   color: var(--color-beige-sand);
   font-size: var(--font-size-small);
