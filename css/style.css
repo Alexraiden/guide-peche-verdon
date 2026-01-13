@@ -553,6 +553,7 @@ p.copyright-text {
   text-align: center;
   color: var(--color-beige-sand);
   font-size: var(--font-size-small);
+  margin-bottom: 0;
 }
 
 .social-links {
