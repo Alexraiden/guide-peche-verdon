@@ -1,190 +1,291 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Les poissons carnassiers de nos lacs alpins : Brochet, Sandre, Truite, Perche. Découvrez les espèces que nous pêchons ensemble.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Les poissons carnassiers de nos lacs alpins : Brochet, Sandre, Truite, Perche. Découvrez les espèces que nous pêchons ensemble."
+    />
     <title>Nos Poissons | Lucas Guide de Pêche</title>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <div class="container">
-            <a href="index.html" class="logo">Lucas Guide de Pêche</a>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="prestations.html">Prestations</a></li>
-                    <li><a href="tarifs.html">Tarifs</a></li>
-                    <li><a href="poissons.html" style="color: var(--color-red-brick);">Nos Poissons</a></li>
-                    <li><a href="zones-peche.html">Zones de Pêche</a></li>
-                    <li><a href="contact.html" class="btn btn-primary">Réserver une sortie</a></li>
-                </ul>
-            </nav>
-            <div class="burger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="container">
+        <a href="index.html" class="logo">Lucas Guide de Pêche</a>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="prestations.html">Prestations</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li>
+              <a href="poissons.html" style="color: var(--color-red-brick)"
+                >Nos Poissons</a
+              >
+            </li>
+            <li><a href="zones-peche.html">Zones de Pêche</a></li>
+            <li>
+              <a href="contact.html" class="btn btn-primary"
+                >Réserver une sortie</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
     </header>
 
     <section class="hero hero-secondary">
-        <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd" alt="Brochet dans l'eau" class="hero-bg">
-        <div class="hero-overlay"></div>
-        <div class="hero-content fade-in">
-            <h1>Les Carnassiers des Alpes</h1>
-            <p class="hero-subtitle">Des poissons trophées dans des eaux cristallines</p>
-        </div>
+      <img
+        src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd"
+        alt="Brochet dans l'eau"
+        class="hero-bg"
+      />
+      <div class="hero-overlay"></div>
+      <div class="hero-content fade-in">
+        <h1>Les Carnassiers des Alpes</h1>
+        <p class="hero-subtitle">
+          Des poissons trophées dans des eaux cristallines
+        </p>
+      </div>
     </section>
 
     <section class="section">
-        <div class="container">
-            <div class="grid grid-2">
-                <!-- Brochet -->
-                <div class="card scroll-reveal">
-                    <img src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd" alt="Brochet" class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Le Brochet</h2>
-                        <span class="badge" style="background-color: var(--color-green-forest); border: none;">Le Roi
-                            des Lacs</span>
-                        <p class="card-text">Emblème de la pêche sportive, le brochet est présent en belle densité dans
-                            nos lacs. Sa touche violente et ses combats puissants en font un adversaire redoutable. Nous
-                            le recherchons principalement aux leurres (big bait, swimbait) dans les herbiers ou en
-                            pleine eau.</p>
-                        <ul class="mt-md" style="font-size: 0.9em; color: var(--color-gray-stone);">
-                            <li>📏 Taille moyenne : 60-90 cm</li>
-                            <li>🏆 Trophée : > 100 cm</li>
-                            <li>🎣 Technique : Big Bait, Jerkbait</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Sandre -->
-                <div class="card scroll-reveal">
-                    <img src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00" alt="Sandre"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">Le Sandre</h2>
-                        <span class="badge" style="background-color: var(--color-blue-lake); border: none;">Le
-                            Fantôme</span>
-                        <p class="card-text">Poisson méfiant et lunatique, le sandre demande de la technique et de la
-                            précision. Sa pêche en verticale ou en linéaire est passionnante. Les lacs de barrage comme
-                            Serre-Ponçon abritent de très beaux spécimens qui se tiennent souvent près du fond.</p>
-                        <ul class="mt-md" style="font-size: 0.9em; color: var(--color-gray-stone);">
-                            <li>📏 Taille moyenne : 40-70 cm</li>
-                            <li>🏆 Trophée : > 90 cm</li>
-                            <li>🎣 Technique : Verticale, leurre souple</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Truite -->
-                <div class="card scroll-reveal">
-                    <img src="https://images.unsplash.com/photo-1565650002099-8e8974c3a7a6" alt="Truite Lacustre"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">La Truite Lacustre</h2>
-                        <span class="badge" style="background-color: #A0AEC0; border: none;">L'Argentée</span>
-                        <p class="card-text">La truite lacustre des Alpes peut atteindre des tailles impressionnantes.
-                            C'est un poisson pélagique qui chasse en bancs. Sa pêche à la traîne ou au lancer demande de
-                            la patience, mais la récompense est souvent à la hauteur de l'attente.</p>
-                        <ul class="mt-md" style="font-size: 0.9em; color: var(--color-gray-stone);">
-                            <li>📏 Taille moyenne : 40-60 cm</li>
-                            <li>🏆 Trophée : > 80 cm</li>
-                            <li>🎣 Technique : Lancer, traîne légère</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Perche -->
-                <div class="card scroll-reveal">
-                    <img src="https://images.unsplash.com/photo-1517002508117-1e8f1e9c1315" alt="Perche"
-                        class="card-img">
-                    <div class="card-body">
-                        <h2 class="card-title">La Perche</h2>
-                        <span class="badge" style="background-color: var(--color-red-brick); border: none;">La
-                            Zébrée</span>
-                        <p class="card-text">Très présente et agressive, la perche offre des pêches ludiques et
-                            dynamiques, idéales pour débuter ou pour enchainer les touches. Les bancs de grosses perches
-                            "zébrures" sont fréquents et offrent des moments de folie.</p>
-                        <ul class="mt-md" style="font-size: 0.9em; color: var(--color-gray-stone);">
-                            <li>📏 Taille moyenne : 20-35 cm</li>
-                            <li>🏆 Trophée : > 45 cm</li>
-                            <li>🎣 Technique : Petit leurre, surface</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="grid grid-2">
+          <!-- Brochet -->
+          <div class="card scroll-reveal">
+            <img
+              src="https://images.unsplash.com/photo-1544552866-d3ed42536cfd"
+              alt="Brochet"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Le Brochet</h2>
+              <span
+                class="badge"
+                style="
+                  background-color: var(--color-green-forest);
+                  border: none;
+                "
+                >Le Roi des Lacs</span
+              >
+              <p class="card-text">
+                Emblème de la pêche sportive en France, le brochet est présent
+                dans tout les lacs du verdon et Serre-Ponçon. Que ce soit en
+                Power Fishing ou en Sharp Shooting nous pourrons varier les
+                approches selon les journées et vos envies pour les appréhender
+                au mieux.
+              </p>
+              <ul
+                class="mt-md"
+                style="font-size: 0.9em; color: var(--color-gray-stone)"
+              >
+                <li>📏 Taille moyenne : 60-90 cm</li>
+                <li>🏆 Trophée : > 100 cm</li>
+                <li>🎣 Technique : Big Bait, Jerkbait</li>
+              </ul>
             </div>
+          </div>
 
-            <div class="text-center mt-xl">
-                <a href="zones-peche.html" class="btn btn-secondary-dark btn-lg">Découvrir les zones de pêche</a>
+          <!-- Sandre -->
+          <div class="card scroll-reveal">
+            <img
+              src="https://images.unsplash.com/photo-1524704654690-b56c05c78a00"
+              alt="Sandre"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Le Sandre</h2>
+              <span
+                class="badge"
+                style="background-color: var(--color-blue-lake); border: none"
+                >Le Vampire</span
+              >
+              <p class="card-text">
+                Surnommé le Vampire il se nourrit majoritairement la nuit, il
+                est fréquent d’en attraper au levé du jour et à la tombé de la
+                nuit en période estivale. Présent sur le lac de Sainte Croix et
+                Castillon, la pêche du sandre est passionnante et ces touches
+                foudroyantes.
+              </p>
+              <ul
+                class="mt-md"
+                style="font-size: 0.9em; color: var(--color-gray-stone)"
+              >
+                <li>📏 Taille moyenne : 40-70 cm</li>
+                <li>🏆 Trophée : > 90 cm</li>
+                <li>🎣 Technique : Verticale, leurre souple</li>
+              </ul>
             </div>
+          </div>
+
+          <!-- Truite -->
+          <div class="card scroll-reveal">
+            <img
+              src="https://images.unsplash.com/photo-1565650002099-8e8974c3a7a6"
+              alt="Truite Lacustre"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h2 class="card-title">La Truite Lacustre</h2>
+              <span
+                class="badge"
+                style="background-color: #a0aec0; border: none"
+                >Le fantôme</span
+              >
+              <p class="card-text">
+                Le fantôme de nos lac ! Un poisson qu’il n’était pas possible de
+                rechercher uniquement aux leurres avant la technologie LIVE.
+                Nous pourrons les capturer de début Mars à fin Mai en
+                Sharpshooting. Leurs comportement est lunatique et leurs combats
+                sont spectaculaires avec parfois de nombreux sauts hors de l’eau
+                ! Présentent dans tout les lacs sauf Esparron.
+              </p>
+              <ul
+                class="mt-md"
+                style="font-size: 0.9em; color: var(--color-gray-stone)"
+              >
+                <li>📏 Taille moyenne : 40-60 cm</li>
+                <li>🏆 Trophée : > 80 cm</li>
+                <li>🎣 Technique : Lancer, traîne légère</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Perche -->
+          <div class="card scroll-reveal">
+            <img
+              src="https://images.unsplash.com/photo-1517002508117-1e8f1e9c1315"
+              alt="Perche"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h2 class="card-title">La Perche</h2>
+              <span
+                class="badge"
+                style="background-color: var(--color-red-brick); border: none"
+                >La Zébrée</span
+              >
+              <p class="card-text">
+                Le poisson ludique par excellence, idéal pour débuter ou se
+                perfectionner, présentes dans tous les lacs nous pourrons
+                essayer d’en capturer toute l’année ! Elles vivent en bancs et
+                il n’est pas rare de faire plusieurs beaux sujets par jour
+                surtout à l’automne.
+              </p>
+              <ul
+                class="mt-md"
+                style="font-size: 0.9em; color: var(--color-gray-stone)"
+              >
+                <li>📏 Taille moyenne : 20-35 cm</li>
+                <li>🏆 Trophée : > 45 cm</li>
+                <li>🎣 Technique : Petit leurre, surface</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <div class="text-center mt-xl">
+          <a href="zones-peche.html" class="btn btn-secondary-dark btn-lg"
+            >Découvrir les zones de pêche</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3>Lucas Guide de Pêche</h3>
-                    <p style="opacity: 0.8; margin-bottom: 1rem;">Votre guide de pêche professionnel dans les Alpes du
-                        Sud.</p>
-                    <div class="social-links">
-                        <a href="https://instagram.com/lucaas_grcn" target="_blank" aria-label="Instagram"><i
-                                class="ph ph-instagram-logo"></i></a>
-                        <a href="https://www.facebook.com/share/1KMMoEQB8V/" target="_blank" aria-label="Facebook"><i
-                                class="ph ph-facebook-logo"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h3>Navigation</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="prestations.html">Prestations</a></li>
-                        <li><a href="tarifs.html">Tarifs</a></li>
-                        <li><a href="poissons.html">Nos Poissons</a></li>
-                        <li><a href="zones-peche.html">Zones de Pêche</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                        <li style="display: flex; gap: 10px; align-items: center;"><i class="ph ph-phone"></i> <a
-                                href="tel:0695058682">06 95 05 86 82</a></li>
-                        <li style="display: flex; gap: 10px; align-items: center;"><i class="ph ph-envelope"></i> <a
-                                href="mailto:Lucas.garcin14@gmail.com">Lucas.garcin14@gmail.com</a></li>
-                    </ul>
-                    <p class="mt-md" style="font-size: 0.9em; opacity: 0.8;">Réponse sous 24-48h</p>
-                </div>
-                <div>
-                    <h3>Zone d'activité</h3>
-                    <p style="opacity: 0.8;">Région PACA :<br>Verdon, Serre-Ponçon, Alpes de Haute Provence.</p>
-                    <div
-                        style="margin-top: 1rem; border: 1px solid rgba(255,255,255,0.3); padding: 5px; border-radius: 4px; display: inline-block;">
-                        <span style="font-size: 0.8rem;">🇫🇷 Guide Diplômé d'État</span>
-                    </div>
-                </div>
-
-                <p class="copyright-text">&copy; 2026 Lucas Guide de Pêche. Tous droits réservés. | <a
-                        href="mentions-legales.html">Mentions
-                        Légales</a> | <a href="cgv.html">CGV</a></p>
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <h3>Lucas Guide de Pêche</h3>
+            <p style="opacity: 0.8; margin-bottom: 1rem">
+              Votre guide de pêche professionnel dans les Alpes du Sud.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://instagram.com/lucaas_grcn"
+                target="_blank"
+                aria-label="Instagram"
+                ><i class="ph ph-instagram-logo"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/share/1KMMoEQB8V/"
+                target="_blank"
+                aria-label="Facebook"
+                ><i class="ph ph-facebook-logo"></i
+              ></a>
             </div>
+          </div>
+          <div>
+            <h3>Navigation</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="prestations.html">Prestations</a></li>
+              <li><a href="tarifs.html">Tarifs</a></li>
+              <li><a href="poissons.html">Nos Poissons</a></li>
+              <li><a href="zones-peche.html">Zones de Pêche</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <ul class="footer-links">
+              <li style="display: flex; gap: 10px; align-items: center">
+                <i class="ph ph-phone"></i>
+                <a href="tel:0695058682">06 95 05 86 82</a>
+              </li>
+              <li style="display: flex; gap: 10px; align-items: center">
+                <i class="ph ph-envelope"></i>
+                <a href="mailto:Lucas.garcin14@gmail.com"
+                  >Lucas.garcin14@gmail.com</a
+                >
+              </li>
+            </ul>
+            <p class="mt-md" style="font-size: 0.9em; opacity: 0.8">
+              Réponse sous 24-48h
+            </p>
+          </div>
+          <div>
+            <h3>Zone d'activité</h3>
+            <p style="opacity: 0.8">
+              Région PACA :<br />Verdon, Serre-Ponçon, Alpes de Haute Provence.
+            </p>
+            <div
+              style="
+                margin-top: 1rem;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                padding: 5px;
+                border-radius: 4px;
+                display: inline-block;
+              "
+            >
+              <span style="font-size: 0.8rem">🇫🇷 Guide Diplômé d'État</span>
+            </div>
+          </div>
+
+          <p class="copyright-text">
+            &copy; 2026 Lucas Guide de Pêche. Tous droits réservés. |
+            <a href="mentions-legales.html">Mentions Légales</a> |
+            <a href="cgv.html">CGV</a>
+          </p>
         </div>
+      </div>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
