@@ -104,6 +104,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Offset pour les ancres de navigation */
+#qui-suis-je {
+  scroll-margin-top: 150px;
+}
+
 body {
   font-family: var(--font-body);
   font-size: var(--font-size-body);
