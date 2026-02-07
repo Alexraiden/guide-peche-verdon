@@ -210,7 +210,7 @@ img {
   z-index: 1000;
   background-color: transparent;
   transition: all var(--transition-base);
-  padding: var(--spacing-md) 0;
+  padding: calc(var(--spacing-md) / 2) 0;
   /* Fix iOS click issues */
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
@@ -369,6 +369,14 @@ img {
   backface-visibility: hidden;
 }
 
+.hero-bg-home {
+  object-position: center 65%;
+}
+
+.hero-content-home {
+  transform: translateY(-60px);
+}
+
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -429,13 +437,75 @@ img {
 
 /* Hero secondaire (sous-pages) */
 .hero-secondary {
-  height: 50vh;
+  height: 62vh;
   min-height: 450px;
   /* Increased slightly to accommodate longer text on index */
   padding-top: 80px;
   /* Compensate for fixed header */
   align-items: center;
   /* Ensure centering */
+}
+
+/* === SCROLL INDICATOR === */
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  margin-top: 3rem;
+  opacity: 0;
+  animation: fadeInIndicator 1.2s ease 1s forwards;
+  cursor: pointer;
+}
+
+@keyframes fadeInIndicator {
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-wave {
+  height: 3px;
+  background: var(--color-gray-stone);
+  border-radius: 3px;
+  animation: waveFlow 2s ease-in-out infinite;
+  transition: background 0.3s ease;
+}
+
+.scroll-wave:nth-child(1) {
+  width: 24px;
+}
+
+.scroll-wave:nth-child(2) {
+  width: 18px;
+  animation-delay: 0.2s;
+}
+
+.scroll-wave:nth-child(3) {
+  width: 12px;
+  animation-delay: 0.4s;
+}
+
+@keyframes waveFlow {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 1;
+  }
+}
+
+.scroll-indicator:hover .scroll-wave {
+  background: var(--color-blue-lake);
+}
+
+/* Hide scroll indicator on mobile */
+@media (max-width: 768px) {
+  .scroll-indicator {
+    display: none;
+  }
 }
 
 /* === CARDS === */
