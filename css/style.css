@@ -664,21 +664,27 @@ p.copyright-text {
 
 /* === CTA SECTION === */
 .cta-section {
-  background: linear-gradient(135deg, var(--color-blue-lake), var(--color-green-forest));
-  color: var(--color-text-white);
   text-align: center;
-  padding: var(--spacing-3xl) var(--spacing-md);
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-2xl);
 }
 
 .cta-section h2 {
-  color: var(--color-text-white);
-  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta-section h2::after {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .cta-section p {
   font-size: var(--font-size-body-lg);
   margin-bottom: var(--spacing-xl);
-  opacity: 0.9;
+  color: var(--color-gray-stone);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* === TABLE === */

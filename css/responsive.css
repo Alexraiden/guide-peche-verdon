@@ -79,6 +79,20 @@
         font-size: 2rem;
     }
 
+    .hero-secondary .hero-content h1 {
+        transform: translateY(-85px);
+        margin-bottom: -30px;
+    }
+
+    .hero-content-home {
+        transform: translateY(0);
+    }
+
+    .hero-content-home h1 {
+        transform: none;
+        margin-bottom: var(--spacing-md);
+    }
+
     .hero-subtitle {
         font-size: 1rem;
     }
@@ -98,6 +112,10 @@
     }
 
     .social-links {
+        justify-content: center;
+    }
+
+    .footer-links li {
         justify-content: center;
     }
 
