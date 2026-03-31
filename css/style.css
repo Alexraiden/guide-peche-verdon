@@ -9,7 +9,7 @@
 :root {
   /* Couleurs primaires */
   --color-blue-lake: #1B4965;
-  --color-green-forest: #2F5233;
+  --color-green-forest: #000000;
   --color-gray-stone: #5C6E7A;
 
   /* Couleurs secondaires */
@@ -231,13 +231,45 @@ img {
 
 .logo {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
   color: var(--color-text-white);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1.2;
+  text-decoration: none;
+  border-left: 2px solid var(--color-beige-sand);
+  padding-left: 10px;
+  letter-spacing: 0.01em;
+}
+
+.logo .logo-name {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.logo .logo-title {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.logo .logo-accent {
+  color: var(--color-beige-sand);
 }
 
 .header.scrolled .logo {
   color: var(--color-blue-lake);
+  border-left-color: var(--color-blue-lake);
+}
+
+.header.scrolled .logo .logo-accent {
+  color: var(--color-blue-lake);
+  opacity: 0.6;
 }
 
 .nav-menu {
