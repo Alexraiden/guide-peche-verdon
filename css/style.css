@@ -405,6 +405,9 @@ img {
   object-position: center 65%;
 }
 
+.hero-bg-poissons {
+  object-position: center bottom;
+}
 
 .hero-content-home {
   transform: translateY(-60px);
