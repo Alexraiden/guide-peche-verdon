@@ -405,6 +405,7 @@ img {
   object-position: center 65%;
 }
 
+
 .hero-content-home {
   transform: translateY(-60px);
 }
@@ -894,4 +895,10 @@ textarea {
 .scroll-reveal.revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Portrait images - reduce by 30% */
+.portrait-image {
+  max-width: 70%;
+  margin: 0 auto;
 }
