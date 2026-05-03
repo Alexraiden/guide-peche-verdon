@@ -98,6 +98,10 @@
         font-size: 1rem;
     }
 
+    .boat-equipment-list {
+        margin-left: 1.25rem;
+    }
+
     /* === CARDS - Afficher la photo en entier sur mobile === */
     .card-img {
         height: auto;
