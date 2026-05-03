@@ -91,6 +91,7 @@
     .hero-content-home h1 {
         transform: none;
         margin-bottom: var(--spacing-md);
+        padding-bottom: 120px;
     }
 
     .hero-subtitle {
