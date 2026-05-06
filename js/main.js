@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initSmoothScroll();
     initFishAnimation();
+    initPagePrefetch();
 });
 
 /* === STICKY HEADER === */
@@ -139,3 +140,47 @@ function initFishAnimation() {
     });
 }
 
+/* === LIGHT PREFETCH FOR INTERNAL NAVIGATION === */
+function initPagePrefetch() {
+    const prefetched = new Set();
+    const heroImages = {
+        'index.html': 'images/hero/optimized/hero-bateau-lac-1440.jpeg',
+        'prestations.html': 'images/hero/optimized/prestations-hero-1440.jpeg',
+        'tarifs.html': 'images/hero/optimized/tarifs-hero-1280.jpeg',
+        'poissons.html': 'images/hero/optimized/nos-poissons-hero-1440.jpeg',
+        'zones-peche.html': 'images/hero/optimized/hero-lieux-1440.jpeg'
+    };
+
+    const addPrefetch = (href, as) => {
+        if (prefetched.has(href)) return;
+        prefetched.add(href);
+
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = href;
+        if (as) link.as = as;
+        document.head.appendChild(link);
+    };
+
+    const prefetchTarget = (link) => {
+        const url = new URL(link.getAttribute('href'), window.location.href);
+
+        if (url.origin !== window.location.origin || url.hash && url.pathname === window.location.pathname) {
+            return;
+        }
+
+        const pageName = url.pathname.split('/').pop() || 'index.html';
+
+        addPrefetch(url.href, 'document');
+
+        if (heroImages[pageName]) {
+            addPrefetch(new URL(heroImages[pageName], window.location.href).href, 'image');
+        }
+    };
+
+    document.querySelectorAll('a[href]').forEach(link => {
+        link.addEventListener('pointerenter', () => prefetchTarget(link), { passive: true });
+        link.addEventListener('focus', () => prefetchTarget(link), { passive: true });
+        link.addEventListener('touchstart', () => prefetchTarget(link), { passive: true, once: true });
+    });
+}

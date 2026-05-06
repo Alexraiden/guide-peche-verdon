@@ -13,7 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preload" as="image" href="images/hero/optimized/tarifs-hero-1280.jpeg"
+        imagesrcset="images/hero/optimized/tarifs-hero-960.jpeg 960w, images/hero/optimized/tarifs-hero-1280.jpeg 1280w, images/hero/optimized/tarifs-hero-1354.jpeg 1354w"
+        imagesizes="100vw" fetchpriority="high">
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -101,7 +104,10 @@
 
     <!-- HERO -->
     <section class="hero hero-secondary">
-        <img src="images/hero/tarifs-hero.jpeg" alt="Tarifs des sorties de pêche en lac dans le Verdon" class="hero-bg">
+        <img src="images/hero/optimized/tarifs-hero-1280.jpeg"
+            srcset="images/hero/optimized/tarifs-hero-960.jpeg 960w, images/hero/optimized/tarifs-hero-1280.jpeg 1280w, images/hero/optimized/tarifs-hero-1354.jpeg 1354w"
+            sizes="100vw" alt="Tarifs des sorties de pêche en lac dans le Verdon" class="hero-bg"
+            fetchpriority="high" decoding="async">
         <div class="hero-overlay"></div>
         <div class="hero-content fade-in">
             <h1>Tarifs 2026</h1>

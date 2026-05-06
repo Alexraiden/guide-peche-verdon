@@ -14,7 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero/optimized/hero-lieux-1440.jpeg"
+      imagesrcset="images/hero/optimized/hero-lieux-960.jpeg 960w, images/hero/optimized/hero-lieux-1440.jpeg 1440w, images/hero/optimized/hero-lieux-1920.jpeg 1920w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <meta property="og:title" content="Guide de pêche Verdon, PACA et lacs alpins | Lucas Garcin" />
@@ -118,9 +126,13 @@
 
     <section class="hero hero-secondary">
       <img
-        src="images/hero/hero-lieux.jpeg"
+        src="images/hero/optimized/hero-lieux-1440.jpeg"
+        srcset="images/hero/optimized/hero-lieux-960.jpeg 960w, images/hero/optimized/hero-lieux-1440.jpeg 1440w, images/hero/optimized/hero-lieux-1920.jpeg 1920w"
+        sizes="100vw"
         alt="Lac alpin dans les zones de pêche du Verdon"
         class="hero-bg"
+        fetchpriority="high"
+        decoding="async"
       />
       <div class="hero-overlay"></div>
       <div class="hero-content fade-in">

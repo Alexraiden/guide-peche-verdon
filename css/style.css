@@ -2,9 +2,6 @@
    LUCAS GUIDE DE PÊCHE - DESIGN SYSTEM
    ==================================== */
 
-/* === FONTS === */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
-
 /* === CSS VARIABLES === */
 :root {
   /* Couleurs primaires */
@@ -102,6 +99,17 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-white-off);
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 180ms;
+  animation-timing-function: ease-out;
 }
 
 /* Offset pour les ancres de navigation */
@@ -115,6 +123,9 @@ body {
   line-height: 1.6;
   color: var(--color-text-primary);
   background-color: var(--color-white-off);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* === TYPOGRAPHY === */
@@ -209,7 +220,7 @@ img {
   right: 0;
   z-index: 1000;
   background-color: transparent;
-  transition: all var(--transition-base);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base);
   padding: calc(var(--spacing-md) / 2) 0;
   /* Fix iOS click issues */
   transform: translateZ(0);
@@ -378,6 +389,8 @@ img {
 /* === HERO SECTION === */
 .hero {
   position: relative;
+  z-index: 0;
+  isolation: isolate;
   height: 100vh;
   min-height: 600px;
   display: flex;
@@ -385,6 +398,7 @@ img {
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  background-color: #0f2532;
 }
 
 .hero-bg {
@@ -394,11 +408,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2;
-  /* GPU optimization to prevent blink on tab switch */
-  transform: translateZ(0);
-  will-change: transform;
-  backface-visibility: hidden;
+  z-index: 0;
 }
 
 .hero-bg-home {
@@ -420,12 +430,12 @@ img {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
-  z-index: -1;
+  z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 900px;
   padding: 0 var(--spacing-md);
 }
@@ -838,15 +848,25 @@ textarea {
 }
 
 /* === ANIMATIONS === */
-@keyframes fadeInUp {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -886,22 +906,39 @@ textarea {
 }
 
 .fade-in {
-  animation: fadeInUp 0.6s ease-out;
+  animation: fadeIn 0.28s ease-out both;
 }
 
 .scroll-reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-out;
+  transform: translate3d(0, 20px, 0);
+  transition: opacity 0.45s ease-out, transform 0.45s ease-out;
+  will-change: opacity, transform;
 }
 
 .scroll-reveal.revealed {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate3d(0, 0, 0);
+  will-change: auto;
 }
 
 /* Portrait images - reduce by 30% */
 .portrait-image {
   max-width: 70%;
   margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

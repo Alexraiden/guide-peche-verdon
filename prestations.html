@@ -17,9 +17,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="images/hero/optimized/prestations-hero-1440.jpeg"
+      imagesrcset="images/hero/optimized/prestations-hero-960.jpeg 960w, images/hero/optimized/prestations-hero-1440.jpeg 1440w, images/hero/optimized/prestations-hero-1920.jpeg 1920w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
 
     <!-- Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
@@ -125,9 +133,13 @@
     <!-- HERO SECONDARY -->
     <section class="hero hero-secondary">
       <img
-        src="images/hero/prestations-hero.jpeg"
+        src="images/hero/optimized/prestations-hero-1440.jpeg"
+        srcset="images/hero/optimized/prestations-hero-960.jpeg 960w, images/hero/optimized/prestations-hero-1440.jpeg 1440w, images/hero/optimized/prestations-hero-1920.jpeg 1920w"
+        sizes="100vw"
         alt="Matériel de pêche aux leurres pour sortie guidée"
         class="hero-bg"
+        fetchpriority="high"
+        decoding="async"
       />
       <div class="hero-overlay"></div>
       <div class="hero-content fade-in">
