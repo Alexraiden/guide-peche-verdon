@@ -128,6 +128,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html.app-navigation body {
+  transition: opacity 190ms ease-out;
+}
+
+html.app-navigation body.page-is-leaving,
+html.app-navigation body.page-is-entering {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* === TYPOGRAPHY === */
 h1,
 h2,
