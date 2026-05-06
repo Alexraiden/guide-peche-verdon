@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lucas-guide-peche.fr/sitemap.xml
+Sitemap: https://lucasgarcin-guidedepeche.fr/sitemap.xml
